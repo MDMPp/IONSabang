@@ -42,9 +42,12 @@ public class perizinan {
     private String npwp;
 
     @Column(nullable = false, length = 30)
-    private String no_permohonan;
+    private String rekom;
 
     @Column(nullable = false, length = 30)
+    private String no_permohonan;
+
+    @Column(nullable = true, length = 30)
     private String dok_lain;
 
     @JsonFormat(pattern = "dd-MM-yyyy HH:mm:ss")
