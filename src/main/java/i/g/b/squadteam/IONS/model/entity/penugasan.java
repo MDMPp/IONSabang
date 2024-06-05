@@ -16,29 +16,29 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @Entity(name = "PENUGASAN")
-public class penugasan {
+public class Penugasan {
     
 
     @Id
     @Column(nullable = false)
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long no_aju;
+    private Long noAju;
 
     @Column(length = 36, unique = true)
     private String uuidPenugasan;
 
     @Column(nullable = false, unique = true)
-    private String nip_1;
+    private String nip1;
 
     @Column(nullable = false, unique = true)
-    private String nip_2;
+    private String nip2;
 
     @Column(nullable = false)
-    private Date tanggal_mulai;
+    private Date tanggalMulai;
 
     @Column(nullable = false)
-    private Date tanggal_selesai;
+    private Date tanggalSelesai;
 
     @Column(nullable = false)
-    private Date tgl_tte;
+    private Date tglTte;
 }

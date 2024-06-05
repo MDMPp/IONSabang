@@ -21,22 +21,22 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @Entity(name = "PERIZINAN")
-public class perizinan {
+public class Perizinan {
   
 
     @Id
     @Column(nullable = false)
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long no_aju;
+    private Long noAju;
 
     @Column(length = 36, unique = true)
     private String uuidPerizinan;
 
     @Column(nullable = false)
-    private Date tanggal_aju;
+    private Date tanggalAju;
 
     @Column(length = 6)
-    private String kode_kantor;
+    private String kodeKantor;
 
     @Column(nullable = false, length = 16)
     private String npwp;
@@ -45,10 +45,10 @@ public class perizinan {
     private String rekom;
 
     @Column(nullable = false, length = 30)
-    private String no_permohonan;
+    private String noPermohonan;
 
     @Column(nullable = true, length = 30)
-    private String dok_lain;
+    private String dokLain;
 
     @JsonFormat(pattern = "dd-MM-yyyy HH:mm:ss")
     @CreationTimestamp

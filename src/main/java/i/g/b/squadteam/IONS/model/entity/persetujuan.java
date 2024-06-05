@@ -16,26 +16,26 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @Entity(name = "PERSETUJUAN")
-public class persetujuan {
+public class Persetujuan {
     
 
     @Id
     @Column(nullable = false)
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long no_aju;
+    private Long noAju;
 
     @Column(length = 36, unique = true)
     private String uuidPenugasan;
 
     @Column(nullable = false)
-    private String lokasi_bongkar;
+    private String lokasiBongkar;
 
     @Column(nullable = false)
-    private String lokasi_timbun;
+    private String lokasiTimbun;
 
     @Column(nullable = false)
     private String persetujuan;
 
     @Column(nullable = false)
-    private Date tgl_tte;
+    private Date tglTte;
 }
